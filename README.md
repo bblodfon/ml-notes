@@ -1,4 +1,4 @@
-# ML Notes
+# ml-notes
 
 ## General ML
 
@@ -45,9 +45,9 @@ e.g. mRNA and protein expressions (if the data dimensions are large)
 
 ## Dimensionality Reduction
 
-- **PCA (Prinicipal Componenent Analysis)**: [article](https://www.datacamp.com/community/tutorials/pca-analysis-r)
-- **MCA (Multiple Correspondence Analysis - PCA for categorical variables)**: [article](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/114-mca-multiple-correspondence-analysis-in-r-essentials/)
+- **PCA** (Prinicipal Componenent Analysis): [article](https://www.datacamp.com/community/tutorials/pca-analysis-r)
+- **MCA** (Multiple Correspondence Analysis - PCA for categorical variables): [article](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/114-mca-multiple-correspondence-analysis-in-r-essentials/)
 
 ## PR (Precision-Recall curves)
 
-- [Article](https://classeval.wordpress.com/introduction/introduction-to-the-precision-recall-plot/)
+- [Intro Article](https://classeval.wordpress.com/introduction/introduction-to-the-precision-recall-plot/)
