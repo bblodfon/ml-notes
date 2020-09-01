@@ -29,7 +29,7 @@
 ## Correlation
 
 - [Article: Correlation Test Between Two Variables in R](http://www.sthda.com/english/wiki/correlation-test-between-two-variables-in-r)
-- Use `ggscatter`: prints $R^2$ and p-value.
+- Use `ggscatter`: prints `R^2` and p-value.
 - Use `ComplexHeatmap` to **visualize a correlation matrix between two variables of interest**, 
 e.g. mRNA and protein expressions (if the data dimensions are large)
 - [On the correlation measure to use between two variables **(continuous vs discrete)**](https://medium.com/@outside2SDs/an-overview-of-correlation-measures-between-categorical-and-continuous-variables-4c7f85610365). From this article I quote: "The idea behind using logistic regression to understand correlation between cont and categorical variables is actually quite straightforward and follows as such: **If there is a relationship between the categorical and continuous variable**, we should be able to construct an accurate predictor of the categorical variable from the continuous variable. If the **resulting classifier has a high degree of fit**, is accurate, sensitive, and specific we can conclude the two variables share a relationship and are indeed correlated."
@@ -40,8 +40,8 @@ e.g. mRNA and protein expressions (if the data dimensions are large)
 - If the **response categorical variable is binary**, use `stats::glm(family = binomial)`
 - For **multiple response classes**, use **Ordinal Logistic Regression** only when the *proportional odds assumption* is true (the relationship between each pair of response groups is the same - e.g. in a survey where you answer with 3 choices, the distance between *unlikely* and *somewhat likely* may be shorter than the distance between *somewhat likely* and *very likely*). In R, use `MASS::polr` or `rms::lrm`. Otherwise, go with **Multinomial Logistic Regression**: `nnet:multinom`.
 - Measures of goodness of fit (fit statistics - related to model validation) for **logistic binary regression**: [article IBM](https://www.ibm.com/support/knowledgecenter/SSLVMB_24.0.0/spss/tutorials/plum_germcr_rsquare.html)
-  - Mcfaddens $R^2$: `pscl:pR2`, `rms` => returns `res$stats` (has Nagelkerke's $R^2$)
-  - [Mcfaddens $R^2$ interpretation](https://stats.stackexchange.com/questions/82105/mcfaddens-pseudo-r2-interpretation)
+  - Mcfaddens `R^2`: `pscl:pR2`, `rms` => returns `res$stats` (has Nagelkerke's `R^2`)
+  - [Mcfaddens `R^2` interpretation](https://stats.stackexchange.com/questions/82105/mcfaddens-pseudo-r2-interpretation)
 
 ## Dimensionality Reduction
 

@@ -423,7 +423,7 @@ summary {
 <h2>Correlation</h2>
 <ul>
 <li><a href="http://www.sthda.com/english/wiki/correlation-test-between-two-variables-in-r">Article: Correlation Test Between Two Variables in R</a></li>
-<li>Use <code>ggscatter</code>: prints <span class="math display">\[R^2\]</span> and p-value.</li>
+<li>Use <code>ggscatter</code>: prints <code>R^2</code> and p-value.</li>
 <li>Use <code>ComplexHeatmap</code> to <strong>visualize a correlation matrix between two variables of interest</strong>, e.g. mRNA and protein expressions (if the data dimensions are large)</li>
 <li><a href="https://medium.com/@outside2SDs/an-overview-of-correlation-measures-between-categorical-and-continuous-variables-4c7f85610365">On the correlation measure to use between two variables <strong>(continuous vs discrete)</strong></a>. From this article I quote: “The idea behind using logistic regression to understand correlation between cont and categorical variables is actually quite straightforward and follows as such: <strong>If there is a relationship between the categorical and continuous variable</strong>, we should be able to construct an accurate predictor of the categorical variable from the continuous variable. If the <strong>resulting classifier has a high degree of fit</strong>, is accurate, sensitive, and specific we can conclude the two variables share a relationship and are indeed correlated.”</li>
 </ul>
@@ -436,8 +436,8 @@ summary {
 <li>For <strong>multiple response classes</strong>, use <strong>Ordinal Logistic Regression</strong> only when the <em>proportional odds assumption</em> is true (the relationship between each pair of response groups is the same - e.g. in a survey where you answer with 3 choices, the distance between <em>unlikely</em> and <em>somewhat likely</em> may be shorter than the distance between <em>somewhat likely</em> and <em>very likely</em>). In R, use <code>MASS::polr</code> or <code>rms::lrm</code>. Otherwise, go with <strong>Multinomial Logistic Regression</strong>: <code>nnet:multinom</code>.</li>
 <li>Measures of goodness of fit (fit statistics - related to model validation) for <strong>logistic binary regression</strong>: <a href="https://www.ibm.com/support/knowledgecenter/SSLVMB_24.0.0/spss/tutorials/plum_germcr_rsquare.html">article IBM</a>
 <ul>
-<li>Mcfaddens <span class="math inline">\(R^2\)</span>: <code>pscl:pR2</code>, <code>rms</code> =&gt; returns <code>res$stats</code> (has Nagelkerke’s <span class="math inline">\(R^2\)</span>)</li>
-<li><a href="https://stats.stackexchange.com/questions/82105/mcfaddens-pseudo-r2-interpretation">Mcfaddens <span class="math inline">\(R^2\)</span> interpretation</a></li>
+<li>Mcfaddens <code>R^2</code>: <code>pscl:pR2</code>, <code>rms</code> =&gt; returns <code>res$stats</code> (has Nagelkerke’s <code>R^2</code>)</li>
+<li><a href="https://stats.stackexchange.com/questions/82105/mcfaddens-pseudo-r2-interpretation">Mcfaddens <code>R^2</code> interpretation</a></li>
 </ul></li>
 </ul>
 </div>
