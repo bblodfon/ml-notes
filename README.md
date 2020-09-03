@@ -4,14 +4,13 @@
 
 - General R **Machine Learning packages**:
   - [`mlr3` package](https://github.com/mlr-org/mlr3/)
-  - [`Caret` package](https://cran.r-project.org/web/packages/caret/index.html)
+  - [`caret` package](https://cran.r-project.org/web/packages/caret/index.html)
 - Check: [`Boruta` package](https://cran.r-project.org/web/packages/Boruta/index.html)
   - https://www.datacamp.com/community/tutorials/feature-selection-R-boruta
 - Check: [`Xgboost` package](https://xgboost.readthedocs.io/en/latest/) - general methodology for classification and regression, very powerfull (seems to be), builds on (weak) model ensembles, usually (decision) trees (closer to Random Forest in that regard)
 
-## Feature selection
+## Feature selection/importance
 
-- [Feature Selection with the Caret R Package](https://machinelearningmastery.com/feature-selection-with-the-caret-r-package/)
 - For **linear regression** (i.e. after using the `lm` function in R), a good package that provides *feature selection* based on diverse criteria (e.g. p-value) is [`SignifReg`](https://cran.r-project.org/web/packages/SignifReg/index.html).
 - Correlation can be used in 2 ways:
   - Remove features with an absolute correlation of **0.75 or higher** when finding the correlation between variables in a training dataset (NO RESPONSE is used here - unsupervised so-to-speak)
@@ -22,7 +21,11 @@
   - [Nice analysis](https://www4.stat.ncsu.edu/~post/josh/LASSO_Ridge_Elastic_Net_-_Examples.html)
   for cross-validating the `alpha` parameter
   - [Slides for Elastic Nets](https://web.stanford.edu/~hastie/TALKS/enet_talk.pdf) 
-- Use [`randomForest` package](https://cran.r-project.org/web/packages/randomForest/index.html)
+- Use [`randomForest` package](https://cran.r-project.org/web/packages/randomForest/index.html) 
+  - Check functions `importance()` and `varImpPlot()`
+  - [Article: Tune number of Trees?](https://stats.stackexchange.com/questions/348245/do-we-have-to-tune-the-number-of-trees-in-a-random-forest) - `500` is alright in general, tune the `mtry` parameter using the function `RFtune()`
+  - If `random.Forest()` is run with `proximity=TRUE` it generates a *N* x *N* matrix of **proximity (similarity)** (*N* = number of rows/data points).
+  This can be scaled to 2D using `MDSplot()` (same data, same response vector, same random forest used to train the data), which internally uses the `stat::cmdscale()` to **see the dataset (every point) in 2D**.
 - **Neural networks** in conjunction with L1-regularization for feature selection? Dropouts also important for zeroing weights in a neural network.
   - Use the `keras` package for NN/deep learning
 
