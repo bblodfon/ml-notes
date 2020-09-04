@@ -1,11 +1,11 @@
 # ml-notes
 
-## General ML
+## General ML packages
 
-- General R **Machine Learning packages**:
-  - [`mlr3` package](https://github.com/mlr-org/mlr3/)
-  - [`caret` package](https://cran.r-project.org/web/packages/caret/index.html)
-- Check at some point the [`Xgboost` package](https://xgboost.readthedocs.io/en/latest/): general methodology for classification and regression, very powerfull (seems to be), builds on (weak) model ensembles, usually (decision) trees (closer to Random Forest in that regard)
+- [`mlr3` package](https://github.com/mlr-org/mlr3/)
+- [`caret` package](https://cran.r-project.org/web/packages/caret/index.html)
+- [`Xgboost` package](https://xgboost.readthedocs.io/en/latest/) 
+  General methodology for classification and regression, very powerfull (seems to be), builds on (weak) model ensembles, usually (decision) trees (closer to Random Forest in that regard) - to check at some point!
 
 ## Feature selection/importance
 
