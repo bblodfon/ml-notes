@@ -24,7 +24,7 @@
 - Use [`randomForest` package](https://cran.r-project.org/web/packages/randomForest/index.html) 
   - Check functions `importance()` and `varImpPlot()`
   - [Article: Tune number of Trees?](https://stats.stackexchange.com/questions/348245/do-we-have-to-tune-the-number-of-trees-in-a-random-forest) - `500` is alright in general, tune the `mtry` parameter using the function `RFtune()`
-  - If `random.Forest()` is run with `proximity=TRUE` it generates a *N* x *N* matrix of **proximity (similarity)** (*N* = number of rows/data points).
+  - If `random.Forest()` is run with `proximity=TRUE` (keep *N* less than 10000, depending on your RAM as well) it generates a *N* x *N* matrix of **proximity (similarity)** (*N* = number of rows/data points).
   This can be scaled to 2D using `MDSplot()` (same data, same response vector, same random forest used to train the data), which internally uses the `stat::cmdscale()` to **see the dataset (every point) in 2D**.
 - **Neural networks** in conjunction with L1-regularization for feature selection? Dropouts also important for zeroing weights in a neural network.
   - Use the `keras` package for NN/deep learning
@@ -50,6 +50,7 @@ e.g. mRNA and protein expressions (if the data dimensions are large)
 
 - **PCA** (Prinicipal Componenent Analysis): [article](https://www.datacamp.com/community/tutorials/pca-analysis-r)
 - **MCA** (Multiple Correspondence Analysis - PCA for categorical variables): [article](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/114-mca-multiple-correspondence-analysis-in-r-essentials/)
+- **UMAP**: a non-linear dimensionality reduction method, check R package [uwot](https://github.com/jlmelville/uwot)
 
 ## PR (Precision-Recall curves)
 
