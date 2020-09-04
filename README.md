@@ -5,9 +5,7 @@
 - General R **Machine Learning packages**:
   - [`mlr3` package](https://github.com/mlr-org/mlr3/)
   - [`caret` package](https://cran.r-project.org/web/packages/caret/index.html)
-- Check: [`Boruta` package](https://cran.r-project.org/web/packages/Boruta/index.html)
-  - https://www.datacamp.com/community/tutorials/feature-selection-R-boruta
-- Check: [`Xgboost` package](https://xgboost.readthedocs.io/en/latest/) - general methodology for classification and regression, very powerfull (seems to be), builds on (weak) model ensembles, usually (decision) trees (closer to Random Forest in that regard)
+- Check at some point the [`Xgboost` package](https://xgboost.readthedocs.io/en/latest/): general methodology for classification and regression, very powerfull (seems to be), builds on (weak) model ensembles, usually (decision) trees (closer to Random Forest in that regard)
 
 ## Feature selection/importance
 
@@ -25,7 +23,8 @@
   - Check functions `importance()` and `varImpPlot()`
   - [Article: Tune number of Trees?](https://stats.stackexchange.com/questions/348245/do-we-have-to-tune-the-number-of-trees-in-a-random-forest) - `500` is alright in general, tune the `mtry` parameter using the function `RFtune()`
   - If `random.Forest()` is run with `proximity=TRUE` (keep *N* less than 10000, depending on your RAM as well) it generates a *N* x *N* matrix of **proximity (similarity)** (*N* = number of rows/data points).
-  This can be scaled to 2D using `MDSplot()` (same data, same response vector, same random forest used to train the data), which internally uses the `stat::cmdscale()` to **see the dataset (every point) in 2D**.
+  This can be scaled to 2D using `MDSplot()` (same data, same response vector, same random forest used to train the data), which internally uses the `stat::cmdscale()` to **see the dataset (every point) in 2D** (very slow).
+- Use the [Boruta R package](https://cran.r-project.org/web/packages/Boruta/index.html)
 - **Neural networks** in conjunction with L1-regularization for feature selection? Dropouts also important for zeroing weights in a neural network.
   - Use the `keras` package for NN/deep learning
 
