@@ -1,7 +1,8 @@
 # ml-notes
 
-## General ML packages
+## General
 
+- [An up-to-date collection](https://cran.r-project.org/web/views/MachineLearning.html) and classification of R Machine Learning packages on CRAN
 - [`mlr3` package](https://github.com/mlr-org/mlr3/)
 - [`caret` package](https://cran.r-project.org/web/packages/caret/index.html)
 - [`Xgboost` package](https://xgboost.readthedocs.io/en/latest/) 
