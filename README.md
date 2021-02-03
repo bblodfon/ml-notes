@@ -58,3 +58,7 @@ e.g. mRNA and protein expressions (if the data dimensions are large)
 ## PR (Precision-Recall curves)
 
 - [Intro Article](https://classeval.wordpress.com/introduction/introduction-to-the-precision-recall-plot/)
+
+## Hierarchical Clustering Analysis
+
+- [Nice Article](https://uc-r.github.io/hc_clustering)
