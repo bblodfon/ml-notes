@@ -61,4 +61,7 @@ e.g. mRNA and protein expressions (if the data dimensions are large)
 
 ## Hierarchical Clustering Analysis
 
-- [Nice Article](https://uc-r.github.io/hc_clustering)
+- [Nice explanatory article](https://uc-r.github.io/hc_clustering)
+- Comparing Dendrograms in R
+  - [Datanovia article](https://www.datanovia.com/en/lessons/comparing-cluster-dendrograms-in-r/)
+  - R package [dendextend](https://talgalili.github.io/dendextend/articles/dendextend.html)
