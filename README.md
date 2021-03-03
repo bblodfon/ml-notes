@@ -51,7 +51,8 @@ e.g. mRNA and protein expressions (if the data dimensions are large)
 
 ## Dimensionality Reduction
 
-- **PCA** (Prinicipal Componenent Analysis): [article](https://www.datacamp.com/community/tutorials/pca-analysis-r)
+- **PCA** (Prinicipal Componenent Analysis): [article](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/112-pca-principal-component-analysis-essentials/)
+  - Use R packages `FactoMineR` (run PCA) and `factoexta` (for visualization)
 - **MCA** (Multiple Correspondence Analysis - PCA for categorical variables): [article](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/114-mca-multiple-correspondence-analysis-in-r-essentials/)
 - **UMAP**: a non-linear dimensionality reduction method, check R package [uwot](https://github.com/jlmelville/uwot)
 
