@@ -66,3 +66,7 @@ e.g. mRNA and protein expressions (if the data dimensions are large)
 - Comparing Dendrograms in R
   - [Datanovia article](https://www.datanovia.com/en/lessons/comparing-cluster-dendrograms-in-r/)
   - R package [dendextend](https://talgalili.github.io/dendextend/articles/dendextend.html)
+
+## Survival Analysis Basics
+
+- [Nice article](http://www.sthda.com/english/wiki/survival-analysis-basics), with practical R examples to Kaplan-Meier plots and *log-rank* tests to compare survival probabilities between groups (of e.g. patients).
