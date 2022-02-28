@@ -29,8 +29,6 @@
   - No tuning offered for `mtry` (so do that with `randomForest` on random samples of your dataset), but everything else is better and faster!
 - Use the [Boruta R package](https://cran.r-project.org/web/packages/Boruta/index.html) and plot the importance boxplot result!
   - Uses `ranger` under the hood currently, so multi-thread support for free
-- **Neural networks** in conjunction with L1-regularization for feature selection? Dropouts also important for zeroing weights in a neural network.
-  - Use the `keras` package for NN/deep learning
 
 ## Correlation
 
