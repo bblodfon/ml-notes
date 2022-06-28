@@ -67,4 +67,6 @@ e.g. mRNA and protein expressions (if the data dimensions are large)
 
 ## Survival Analysis Basics
 
-- [Nice article](http://www.sthda.com/english/wiki/survival-analysis-basics), with practical R examples to Kaplan-Meier plots and *log-rank* tests to compare survival probabilities between groups (of e.g. patients).
+- [KM-plots and log-rank tests in R](http://www.sthda.com/english/wiki/survival-analysis-basics)
+- [Cox Proportional Hazards Modeling in R](http://www.sthda.com/english/wiki/cox-proportional-hazards-model)
+
