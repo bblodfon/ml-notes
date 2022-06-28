@@ -2,11 +2,13 @@
 
 ## General
 
-- [An up-to-date collection](https://cran.r-project.org/web/views/MachineLearning.html) and classification of R Machine Learning packages on CRAN
-- [`mlr3` package](https://github.com/mlr-org/mlr3/)
+- [CRAN Task View: ML](https://cran.r-project.org/web/views/MachineLearning.html)
+- [`mlr3` framework](https://github.com/mlr-org/mlr3/) and [mlr3book](https://mlr3book.mlr-org.com/)
 - [`caret` package](https://cran.r-project.org/web/packages/caret/index.html)
-- [`Xgboost` package](https://xgboost.readthedocs.io/en/latest/) 
-  General methodology for classification and regression, very powerfull (seems to be), builds on (weak) model ensembles, usually (decision) trees (closer to Random Forest in that regard) - to check at some point!
+
+## Boosting
+
+- `xgboost` R package ([docs](https://xgboost.readthedocs.io/en/latest/), [GitHub](https://github.com/dmlc/xgboost/)) and nice intro [slides](http://www.chengli.io/tutorials/gradient_boosting.pdf)
 
 ## Feature selection/importance
 
@@ -65,8 +67,9 @@ e.g. mRNA and protein expressions (if the data dimensions are large)
   - [Datanovia article](https://www.datanovia.com/en/lessons/comparing-cluster-dendrograms-in-r/)
   - R package [dendextend](https://talgalili.github.io/dendextend/articles/dendextend.html)
 
-## Survival Analysis Basics
+## Survival Analysis
 
+- [CRAN Task View: Survival Analysis](https://cran.r-project.org/web/views/Survival.html)
 - [KM-plots and log-rank tests in R](http://www.sthda.com/english/wiki/survival-analysis-basics)
 - [Cox Proportional Hazards Modeling in R](http://www.sthda.com/english/wiki/cox-proportional-hazards-model)
 
