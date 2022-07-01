@@ -6,6 +6,10 @@
 - [`mlr3` framework](https://github.com/mlr-org/mlr3/) and [mlr3book](https://mlr3book.mlr-org.com/)
 - [`caret` package](https://cran.r-project.org/web/packages/caret/index.html)
 
+## Hyperparameter Optimization
+
+- [Nice article](https://www.vantage-ai.com/en/blog/bayesian-optimization-for-quicker-hyperparameter-tuning) on Bayesian Optimization
+
 ## Boosting
 
 - `xgboost` R package ([docs](https://xgboost.readthedocs.io/en/latest/), [GitHub](https://github.com/dmlc/xgboost/)) and nice intro [slides](http://www.chengli.io/tutorials/gradient_boosting.pdf)
