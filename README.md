@@ -5,6 +5,7 @@
 - [CRAN Task View: ML](https://cran.r-project.org/web/views/MachineLearning.html)
 - [`mlr3` framework](https://github.com/mlr-org/mlr3/) and [mlr3book](https://mlr3book.mlr-org.com/)
 - [`caret` package](https://cran.r-project.org/web/packages/caret/index.html)
+- [mlim](https://github.com/haghish/mlim) R package for **ML-driven data imputation**
 
 ## Hyperparameter Optimization
 
