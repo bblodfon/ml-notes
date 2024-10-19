@@ -53,6 +53,7 @@ e.g. mRNA and protein expressions (if the data dimensions are large)
 - Measures of goodness of fit (fit statistics - related to model validation) for **logistic binary regression**: [article IBM](https://www.ibm.com/support/knowledgecenter/SSLVMB_24.0.0/spss/tutorials/plum_germcr_rsquare.html)
   - Mcfaddens `R^2`: `pscl:pR2`, `rms` => returns `res$stats` (has Nagelkerke's `R^2`)
   - [Mcfaddens `R^2` interpretation](https://stats.stackexchange.com/questions/82105/mcfaddens-pseudo-r2-interpretation)
+  - [Nice reference](https://hbiostat.org/bib/r2.html) about `R^2` measures
 
 ## Dimensionality Reduction
 
